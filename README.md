@@ -1,8 +1,8 @@
 <hr>
-<img src="./costsOfTravel/Assets/strip.svg">
+<img src="./Assets/strip.svg">
 
 <hr>
 
 <div align="center">
-<img src="./costsOfTravel/Assets/Home.svg" width="300px">
+<img src="./Assets/Home.svg" width="300px">
 </div>
