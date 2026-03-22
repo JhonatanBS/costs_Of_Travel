@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">costsOfTravel</string>
+    <string name="logo">logotipo</string>
+    <string name="your_costs">Seu gasto total será</string>
+    <string name="your_value">R$ 0,00</string>
+    <string name="total_km">Total de quilômetros</string>
+    <string name="distance">Distância</string>
+    <string name="total_gas">Preço por litro</string>
+    <string name="Price">Preço</string>
+    <string name="Car">Autonomia</string>
+    <string name="kms_for_liter">Kms por litro</string>
+    <string name="year">2026</string>
+</resources>
