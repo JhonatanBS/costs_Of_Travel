@@ -86,6 +86,7 @@
         android:autofillHints="numberDecimal"
         android:background="@drawable/input_custom"
         android:drawableEnd="@drawable/ic_gas"
+        android:focusable="false"
         android:hint="@string/Price"
         android:inputType="numberDecimal"
         android:paddingHorizontal="16dp"
