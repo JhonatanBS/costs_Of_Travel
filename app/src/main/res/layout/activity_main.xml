@@ -49,22 +49,22 @@
     <EditText
         android:id="@+id/edittext_map"
         android:layout_width="0dp"
-        app:layout_constraintWidth_max="480dp"
         android:layout_height="48dp"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="40dp"
         android:autofillHints="numberDecimal"
-        android:textColorHint="@color/primaryLess"
-        android:drawableEnd="@drawable/ic_map"
         android:background="@drawable/input_custom"
+        android:drawableEnd="@drawable/ic_map"
         android:hint="@string/distance"
         android:inputType="numberDecimal"
         android:paddingHorizontal="16dp"
         android:paddingVertical="5dp"
+        android:textColorHint="@color/primaryLess"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearlayout_header" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearlayout_header"
+        app:layout_constraintWidth_max="480dp" />
 
     <TextView
         android:id="@+id/text_total_km"
@@ -80,21 +80,21 @@
     <EditText
         android:id="@+id/edittext_gas"
         android:layout_width="0dp"
-        app:layout_constraintWidth_max="480dp"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
         android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
         android:autofillHints="numberDecimal"
-        android:drawableEnd="@drawable/ic_gas"
         android:background="@drawable/input_custom"
+        android:drawableEnd="@drawable/ic_gas"
         android:hint="@string/Price"
-        android:textSize="18sp"
         android:inputType="numberDecimal"
         android:paddingHorizontal="16dp"
         android:paddingVertical="5dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_total_km" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_total_km"
+        app:layout_constraintWidth_max="480dp" />
 
     <TextView
         android:id="@+id/text_total_gas"
@@ -110,22 +110,22 @@
     <EditText
         android:id="@+id/edittext_car"
         android:layout_width="0dp"
-        app:layout_constraintWidth_max="480dp"
         android:layout_height="48dp"
-        android:layout_marginTop="20dp"
         android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
         android:autofillHints="numberDecimal"
-        android:textSize="18sp"
-        android:drawableEnd="@drawable/ic_car"
         android:background="@drawable/input_custom"
+        android:drawableEnd="@drawable/ic_car"
         android:hint="@string/Car"
-        android:textColorHint="@color/primaryLess"
         android:inputType="numberDecimal"
         android:paddingHorizontal="16dp"
         android:paddingVertical="5dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="@color/primaryLess"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_total_gas" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_total_gas"
+        app:layout_constraintWidth_max="480dp" />
 
     <TextView
         android:id="@+id/text_total_car"
@@ -139,13 +139,14 @@
         app:layout_constraintTop_toBottomOf="@id/edittext_car" />
 
     <Button
+        android:id="@+id/button_calculate"
         android:layout_width="158dp"
         android:layout_height="53dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/button_custom"
-        app:backgroundTint="@null"
         android:text="@string/Calculate"
         android:textColor="@color/white"
+        app:backgroundTint="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_total_car" />
