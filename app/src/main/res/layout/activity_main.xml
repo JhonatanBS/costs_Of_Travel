@@ -46,28 +46,24 @@
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="@id/linearlayout_header" />
 
-    <ImageView
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="46dp"
-        android:src="@drawable/ic_map"
-        app:layout_constraintEnd_toStartOf="@id/edittext_map"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearlayout_header" />
-
     <EditText
         android:id="@+id/edittext_map"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginStart="60dp"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_max="480dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="40dp"
         android:layout_marginTop="40dp"
-        android:layout_marginEnd="23dp"
-        android:autofillHints="number"
+        android:autofillHints="numberDecimal"
+        android:textColorHint="@color/primaryLess"
+        android:drawableEnd="@drawable/ic_map"
         android:background="@drawable/input_custom"
         android:hint="@string/distance"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:paddingHorizontal="16dp"
         android:paddingVertical="5dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearlayout_header" />
 
     <TextView
@@ -81,29 +77,23 @@
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/edittext_map" />
 
-    <ImageView
-        android:id="@+id/imageview_gas"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="46dp"
-        android:src="@drawable/ic_gas"
-        app:layout_constraintEnd_toStartOf="@id/edittext_map"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_total_km" />
-
     <EditText
         android:id="@+id/edittext_gas"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="23dp"
-        android:autofillHints="number"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_max="480dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:autofillHints="numberDecimal"
+        android:drawableEnd="@drawable/ic_gas"
         android:background="@drawable/input_custom"
         android:hint="@string/Price"
-        android:inputType="number"
+        android:textSize="18sp"
+        android:inputType="numberDecimal"
         android:paddingHorizontal="16dp"
         android:paddingVertical="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_total_km" />
 
     <TextView
@@ -117,29 +107,24 @@
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/edittext_gas" />
 
-    <ImageView
-        android:id="@+id/imageview_car"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="46dp"
-        android:src="@drawable/ic_car"
-        app:layout_constraintEnd_toStartOf="@id/edittext_map"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_total_gas" />
-
     <EditText
         android:id="@+id/edittext_car"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="23dp"
-        android:autofillHints="number"
+        android:layout_width="0dp"
+        app:layout_constraintWidth_max="480dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="40dp"
+        android:autofillHints="numberDecimal"
+        android:textSize="18sp"
+        android:drawableEnd="@drawable/ic_car"
         android:background="@drawable/input_custom"
         android:hint="@string/Car"
-        android:inputType="number"
+        android:textColorHint="@color/primaryLess"
+        android:inputType="numberDecimal"
         android:paddingHorizontal="16dp"
         android:paddingVertical="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_total_gas" />
 
     <TextView
@@ -159,7 +144,7 @@
         android:layout_marginTop="40dp"
         android:background="@drawable/button_custom"
         app:backgroundTint="@null"
-        android:text="Calcular"
+        android:text="@string/Calculate"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -187,7 +172,7 @@
         android:id="@+id/textview_copyright"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Copyright@ JhonatanBS"
+        android:text="@string/copyright"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20sp"
